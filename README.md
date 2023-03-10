@@ -9,12 +9,13 @@ Software de propósito general orientado a talleres mecánicos.
  
  1. git clone https://github.com/ediazgarcia/repair-suite.git
  2. cd repair-suite
- 3. pip install -r requirements.txt
- 4. python index.py
+ 3. Crear el entorno virtual:
+  - python3 -m venv venv
  
+ 4. pip install -r requirements.txt
  
-### Antes de ejecutar la aplicación, debe crear las siguientes variables de entorno:
-- Crear el archivo .env colocar estas variables y poner los datos correspondientes 
+ 5.  Antes de ejecutar la aplicación, debe crear las siguientes variables de entorno:
+- Crear el archivo .env en la raiz del proyecto y colocar estas variables y los datos correspondientes 
 
 MYSQL_USER=
 
@@ -25,4 +26,10 @@ MYSQL_DATABASE=
 MYSQL_HOST=
 
 MYSQL_PORT=
+
+
+ 
+ 6. python index.py
+ 
+
 
