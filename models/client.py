@@ -18,7 +18,7 @@ class Client(db.Model):
         'empresas.id_empresa', onupdate='RESTRICT', ondelete='CASCADE'))
     empresa = db.relationship("Empresa", back_populates="clientes")
 
-    def __init__(self, nombre, apellido, tipo_doc, num_doc, correo_electronico, telefono, ciudad, direccion, creado, actualizado, empresa_id):
+    def __init__(self, nombre, apellido, tipo_doc, num_doc, correo_electronico, telefono, ciudad, direccion, empresa_id):
         self.nombre = nombre
         self.apellido = apellido
         self.tipo_doc = tipo_doc
@@ -27,6 +27,4 @@ class Client(db.Model):
         self.telefono = telefono
         self.ciudad = ciudad
         self.direccion = direccion
-        self.creado = creado
-        self.actualizado = actualizado
         self.empresa_id = empresa_id
