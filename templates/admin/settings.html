@@ -18,6 +18,7 @@
     <link rel="stylesheet" href="../static/css/mdb.min.css">
     <!-- Your custom styles (optional) -->
     <link rel="stylesheet" href="../static/css/style.css">
+    <link rel="stylesheet" href="../static/css/main.css">
   </head>
 
 <body class="fixed-sn">
@@ -98,14 +99,10 @@
           </li>
         </ul>
         <div class="tab-content card pt-5" id="myTabContentJust">
-          <div class="tab-pane fade show active" id="empresa-just" role="tabpanel" aria-labelledby="empresa-tab-just">
+          <div class="tab-pane fade show active abs-center" id="empresa-just" role="tabpanel" aria-labelledby="empresa-tab-just">
             <h2 class='mb-3'>Perfil de la Empresa</h2>
             <form class="border border-light p-5" action="#!">
               <div class="form-row">
-                <div class="form-group col-md-1">
-                  <label for="IDEp">ID</label>
-                  <input type="text" id="IDEp" class="form-control disabled">
-                </div>
                 <div class="form-group col-md-11">
                   <label for="RazonEp">Razón Social</label>
                   <input type="text" id="RazonEp" class="form-control">
@@ -161,10 +158,7 @@
                   </select>
                 </div>
               </div>
-              <div>
-                <button type="submit" class="btn unique-color text-white">Actualizar</button>
-                <button type="reset" class="btn special-color-dark text-white">Reiniciar</button>
-              </div>
+                <button type="submit" class="btn unique-color text-white">Guardar</button>
             </form>
           </div>
           <div class="tab-pane fade" id="reportes-just" role="tabpanel" aria-labelledby="reportes-tab-just">
