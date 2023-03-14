@@ -7,6 +7,9 @@ clients = Blueprint("clients", __name__)
 def home():
     return render_template("admin/index.html")
 
+@clients.route("/directory")
+def directory():
+    return render_template("admin/directory.html")
 
 @ clients.route("/new")
 def add_client():
