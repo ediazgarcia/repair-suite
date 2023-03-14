@@ -9,7 +9,8 @@ Software de propósito general orientado a talleres mecánicos.
  
  1. git clone https://github.com/ediazgarcia/repair-suite.git
  2. cd repair-suite
- 3. Crear el entorno virtual:
+ 3. Instalar y Crear el entorno virtual:
+  - pip install virtualenv
   - python3 -m venv venv
  
  4. pip install -r requirements.txt
