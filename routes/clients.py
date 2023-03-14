@@ -5,7 +5,7 @@ clients = Blueprint("clients", __name__)
 
 @clients.route("/")
 def home():
-    return render_template("index.html")
+    return render_template("admin/settings.html")
 
 
 @clients.route("/new")
